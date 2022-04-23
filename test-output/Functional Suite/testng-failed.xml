@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.pom.util.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Functional Test(failed)">
+    <classes>
+      <class name="com.pom.testcases.LandingpageTest">
+        <methods>
+          <include name="FeaturesTest"/>
+          <include name="TnCTest"/>
+          <include name="PricingTest"/>
+          <include name="CustomersTest"/>
+          <include name="teardown"/>
+          <include name="beforeloginTest"/>
+          <include name="AndroidTest"/>
+          <include name="GoTopBtnTest"/>
+          <include name="setup"/>
+          <include name="beforeSignUpTest"/>
+        </methods>
+      </class> <!-- com.pom.testcases.LandingpageTest -->
+      <class name="com.pom.testcases.ContactspageTest">
+        <methods>
+          <include name="CreateContactTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.pom.testcases.ContactspageTest -->
+      <class name="com.pom.testcases.HomepageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="addingcontact"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.pom.testcases.HomepageTest -->
+      <class name="com.pom.testcases.DealspageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TargetSales"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.pom.testcases.DealspageTest -->
+      <class name="com.pom.testcases.LoginpageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.pom.testcases.LoginpageTest -->
+    </classes>
+  </test> <!-- Functional Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->
